@@ -1,0 +1,162 @@
+/* --/-/-/-/-/-/-/ PRELOAD SVG -/-/-/-/-/-/-/-/-/- */
+.progress__section {
+    position: absolute;
+    left: -5%;
+    top: 0%;
+    width: 60px;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    will-change: transform;
+    transition: 0.3s;
+}
+.progress__bar__wrap {
+    position: relative;
+    width: 5px;
+    overflow: hidden;
+    background-color: rgb(70, 70, 70);
+}
+.progress__bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--PrimaryColor);
+}
+/* circle */
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
+    position: fixed;
+    box-sizing: border-box;
+    transition: 0.1s;
+    display: block;
+    z-index: 9999;
+    margin: -1em;
+}
+
+
+/* preload */
+
+
+.preload {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--BackgroundColor);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+.preload__finish {
+    animation: top-anim 1s ease-in-out forwards;
+    animation-delay: 5s;
+    pointer-events: none;
+}
+.preload__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+#svg__text {
+    animation: text-opac .9s ease forwards;
+    animation-delay: 4.5s;
+}
+/* Animating text */
+#svg__text path:nth-child(1) {
+    stroke-dasharray: 329;
+    stroke-dashoffset: 329;
+    animation: line-anim 3s ease forwards;
+}
+#svg__text path:nth-child(2) {
+    stroke-dasharray: 337;
+    stroke-dashoffset: 337;
+    animation: line-anim 3s ease forwards 0.3s;
+}
+#svg__text path:nth-child(3) {
+    stroke-dasharray: 159;
+    stroke-dashoffset: 159;
+    animation: line-anim 3s ease forwards 0.6s;
+}
+#svg__text path:nth-child(4) {
+    stroke-dasharray: 374;
+    stroke-dashoffset: 374;
+    animation: line-anim 3s ease forwards 0.9s;
+}
+#svg__text path:nth-child(5) {
+    stroke-dasharray: 326;
+    stroke-dashoffset: 326;
+    animation: line-anim 3s ease forwards 1.2s;
+}
+#svg__text path:nth-child(6) {
+    stroke-dasharray: 445;
+    stroke-dashoffset: 445;
+    animation: line-anim 3s ease forwards 1.5s;
+}
+#svg__text path:nth-child(7) {
+    stroke-dasharray: 159;
+    stroke-dashoffset: 159;
+    animation: line-anim 3s ease forwards 1.8s;
+}
+#svg__text path:nth-child(8) {
+    stroke-dasharray:  164;
+    stroke-dashoffset: 164;
+    animation: line-anim 3s ease forwards 2.1s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes text-opac {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes top-anim {
+    from {
+        top: 0%;
+        opacity: 1;
+    }
+    to {
+        top: -100%;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+@keyframes img-anim {
+    from {
+        right: 5%;
+        top: 0%;
+        transform: translateY(-0%);
+        opacity: 0;
+    }
+    to {
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}
+@keyframes banner-anim {
+    from {
+        top: 70%;
+        left: 8%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}

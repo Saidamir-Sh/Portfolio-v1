@@ -1,0 +1,285 @@
+/*
+    320px — 480px: Mobile devices.
+    481px — 768px: iPads, Tablets.
+    769px — 1024px: Small screens, laptops.
+    1025px — 1200px: Desktops, large screens.
+    1201px and more — Extra large screens, TV.
+*/
+
+
+/*  /-/-/-/-/-/-/-      320px — 480px: Mobile devices.      /-/-/-/-/-/-/-/ */
+@media (min-width: 320px) and (max-width: 480px) {
+    /*  HOME    */
+    .preload {
+        display: none;
+    }
+   p, a, li {
+       font-size: .8rem;
+   }
+   .svg__text path {
+    font-size: 1rem;
+    }
+   h1, h2, h3 {
+       font-size: 1rem;
+   }
+   .bar__logo p {
+       font-size: .9rem;
+   }
+   .bar__logo small {
+       font-size: .7rem;
+   }
+   .bar {
+       width: 40%;
+   }
+   .bar li a {
+       font-size: .8rem;
+   }
+   .skew1 h2,
+   .textBox .skew2 h2 {
+       font-size: 4rem;
+       margin-top: 50%;
+   }
+   .circle {
+       display: none;
+   }
+
+   .home {
+       overflow: hidden;
+       height: 85vh;
+   }
+
+   /* ABOUT  */
+   .about {
+       height: 100vh;
+   }
+   .about__container h1 {
+       font-size: 2rem;
+   }
+   .about__text {
+       width: 70%;
+       padding-top: 2em;
+   }
+   .social__links {
+       width: 70%;
+       padding-top: 2em;
+   }
+   .progress__section {
+       height: 100%;
+   }
+
+   /* SKILLS    */
+   .skills {
+       height: 100vh;
+   }
+   .skills__container h1 {
+       font-size: 2rem;
+   }
+   .skills__text {
+       width: 80%;
+       padding-top: 2em;
+   }
+   .skills__list {
+       width: 90%;
+       left: 0;
+       padding-top: 4em;
+   }
+
+   /*    Projects    */
+
+   .works__container h1 {
+       font-size: 2rem;
+   }
+   .projects__container {
+       margin-top: 2em;
+   }
+   .project__img img {
+       width: 100%;
+   }
+   .project {
+       margin: 1em 0em;
+   }
+   .project__img {
+       display: flex;
+       flex-direction: column;
+   }
+   .project__img div {
+       width: 100%;
+   }
+   .project-2 .project__img {
+       flex-direction: column;
+   }
+   .project__title span {
+       display: none;
+   }
+   .project__img div a i {
+       width: 30px;
+       height: 30px;
+   }
+
+}
+
+/* /-/-/-/-/-/-/    481px — 768px: iPads, Tablets. -/-/-/-/-/*/
+@media (min-width: 481px) and (max-width: 768px) {
+     /*  HOME    */
+     .preload {
+        display: none;
+    }
+   p, a, li {
+    font-size: 1rem;
+}
+h1, h2, h3 {
+    font-size: 1.4rem;
+}
+.bar__logo p {
+    font-size: 1.2rem;
+}
+.bar__logo small {
+    font-size: .9rem;
+}
+.bar {
+    width: 30%;
+}
+.bar li a {
+    font-size: .8rem;
+}
+.skew1 h2,
+.textBox .skew2 h2 {
+    font-size: 6rem;
+    margin-top: 25%;
+}
+.circle {
+    display: none;
+}
+
+.home {
+    overflow: hidden;
+    height: 65vh;
+}
+
+/* ABOUT  */
+.about {
+    height: 75vh;
+}
+.about__container h1 {
+    font-size: 3.2rem;
+}
+.about__text {
+    width: 70%;
+    padding-top: 2em;
+}
+.social__links {
+    width: 50%;
+    padding-top: 2em;
+}
+.progress__section {
+    height: 100%;
+}
+
+/* SKILLS    */
+.skills {
+    height: 72vh;
+}
+.skills__container h1 {
+    font-size: 3.2rem;
+}
+.skills__text {
+    width: 70%;
+    padding-top: 2em;
+}
+.skills__list {
+    width: 60%;
+    left: 0;
+    padding-top: 4em;
+}
+
+/*    Projects    */
+
+.works__container h1 {
+    font-size: 3.2rem;
+}
+.projects__container {
+    margin-top: 2em;
+}
+.project__img a img {
+    width: 25em;
+}
+.project {
+    margin: 1em 0em;
+}
+.project__img {
+    display: flex;
+    justify-content: space-between;
+}
+.project__img div {
+    width: 30%;
+}
+.project__img div p {
+    width: 100%;
+}
+.project__img div a {
+    width: 80%;
+}
+.project__title span {
+    display: none;
+}
+.project__img div a i {
+    width: 30px;
+    height: 30px;
+    }
+}
+/* -/-/-/-/-/-/-/ 769px — 1024px: Small screens, laptops. -/-/-/-/-/-/  */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* ABOUT  */
+.about__text {
+    width: 50%;
+    padding-top: 4em;
+}
+.social__links {
+    width: 40%;
+    padding-top: 2em;
+}
+    /* SKILLS    */
+.skills {
+    height: 72vh;
+}
+.skills__text {
+    padding-top: 1em;
+}
+.skills__list {
+    width: 50%;
+    left: 0;
+    padding-top: 4em;
+}
+/*    Projects    */
+
+.projects__container {
+    margin-top: 2em;
+}
+.project__img a img {
+    width: 25em;
+}
+.project {
+    margin: 1em 0em;
+}
+.project__img {
+    display: flex;
+    justify-content: space-between;
+}
+.project__img div {
+    width: 40%;
+}
+.project__img div p {
+    width: 100%;
+}
+.project__img div a {
+    width: 50%;
+}
+.project__title span {
+    display: none;
+}
+.project__img div a i {
+    width: 30px;
+    height: 30px;
+    }
+}
+
