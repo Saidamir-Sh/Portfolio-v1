@@ -49,7 +49,7 @@
     background-color: var(--BackgroundColor);
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 9999;
     pointer-events: none;
 }
 .preload__finish {
@@ -124,12 +124,14 @@
 @keyframes top-anim {
     from {
         top: 0%;
-        opacity: 1;
+        opacity: 1; 
+        transform: scale(1);
     }
     to {
         top: -100%;
         z-index: -1;
-        opacity: 0;
+        opacity: 0; 
+        transform: scale(5);
     }
 }
 
