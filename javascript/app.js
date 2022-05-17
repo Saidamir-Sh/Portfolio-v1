@@ -25,10 +25,10 @@ setTimeout(() => {
 
 
 /* smooth scrolling */
-function init(){
-	new SmoothScroll(document, 150,5)
-}
-
+// function init(){
+// 	new SmoothScroll(document, 150,5)
+// }
+// comment out : causing not to scroll on other browsers
 function SmoothScroll(target, speed, smooth) {
 	if (target === document)
 		target = (document.scrollingElement 
